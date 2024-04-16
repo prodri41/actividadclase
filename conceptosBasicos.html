@@ -5,70 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conceptos básicos js</title>
     
-    <script src="/conceptosBasicos.js" defer></script>
+    <!-- archivo de js de la clase pasada -->
+    <script src="scripts/conceptosBasicos.js" defer></script>
+    <!-- archivo de js de la clase de hoy 10/04/2024 -->
+    <!-- type="text/JavaScript" -> RECOMENDADO USAR -->
     <script src="scripts/practicaConceptos.js" defer type="text/JavaScript"></script>
-
     
 </head>
 <body> 
+
+
+    <header>
+        <h1>Conceptos básicos</h1>
+        <h2>De JavaScript</h2>
+    </header>
+
+    <main>
+
+        <p>Implementar los conceptos de sitios web dinámicos con javaScript:</p>
+
+        <ol>
+            <li> MANEJO DEL DOM</li>
+            <li> CONDICIONALES</li>
+            <li> CICLOS</li>
+        </ol>
+
+
+        <!-- sección para el primer ejercicio -> Ejercicio de DOM Y CONDICIONALES -->
+        <section>
+            <h3>Ejercicio de DOM y Condicionales</h3>
+            <!-- Qué es lo que quiero hacer con este ejercicio -->
+            <p> Preguntar al usuario su edad y mostrar en pantalla si es mayor o menor de edad</p>
+
+            <div class="contenedor">
+                <!-- input -> entrada -> que es algo que me suministra el usuario ej: número, un nombre, correo, una contraseña, etc -->
+                <!-- label -> es una etiqueta para el input -->
+                <label>¿Cuál es tu edad?</label> 
+                <input type="number" id="edadInput" placeholder="Ingrese aquí su edad">
+
+                <!-- para darle duncionalidad a ese botón, debo llamar un EVENTO onclick -> darle click al botón -->
+                <!-- EVENTO ES UNA ACCIÓN DEL USUARIO -->
+                <button id="boton" onclick="verificarEdad()">Verificar edad</button>
+
+                <!-- el id -> es un IDENTIFICADOR ÚNICO -> que podamos llevar un elemento de html a nuestro JS -->
+                <br><br>
+                <span id="mensajeEdad">Soy el mensaje que te dirá si eres mayor de edad</span>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p> Soy los derechos</p>
+    </footer>
+
     
-
-<header>
-    <h1>Conceptos básicos</h1>
-    <h2>De JavaScript</h2>
-</header>
-
-<main>
-    <p>Implementar los conceptos de sitios web dinámicos con JavaScript</p>
-
-    <ol>
-        <li>1. MANEJO DEL DOM</li>
-        <li>2. CONDICIONALES</li>
-        <li>3. CICLOS</li>
-    </ol>
-
-<!-- seccion para el primer ejercicio -> Ejercicio de DOM Y CONDICIONALES ->
-
-
-<section>
-    <h3>Ejercicio de DOM y Condicionales</h3>
-    <!-- Qué es lo que quiero hacer con este ejercicio -->
-    <p> Preguntar al usuario su edad y mostrar en pantalla si es mayor o menor de edad</p>
-
-
-    <div>
-<!-- input -> entrada -> que es algo que suministra el usuario-->
-<label>¿Cuál es tu edad?</label>
-<input type="number" id="edadInput"
-placeholder="Ingrese aquí su edad">
-
-<!-- para darle funcionalidad a ese botón debo llamar un EVENTO onCLICK -> darle click al botón-->
-<!-- EVENTO ES UNA ACCION DEL USUARIO-->
-
-<button onclick="verificarEdad()">>Verificar edad</button>
-
-
-<!--el id-> es un identificador unico -> que podemos llevar el elemento de html a nuestro js-->
-<span id="mensaje"></span>
-
-<span></span>
-
-
-    </div>
-
-
-
-
-</section>
-
-
-</main>
-
-
-<fooder>
-
-
-</fooder>
 
 
 

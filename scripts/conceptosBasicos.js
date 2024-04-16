@@ -5,7 +5,6 @@ console.log("HOLA, DESARROLLADORES  Y PSICÓLOGOS");
 console.log("mi mensaje");
 
 
-
 // CONCEPTOS BÁSICO EN JAVASCRIPT
 
 //1. tipos de variables
@@ -41,42 +40,48 @@ let esFalso = false; // false -> falso
 //Arreglos -> arrays(en programación) -> me permiten almacenar varios datos al mismo tiempo en una misma variable
 let arregloNombres = ["Luisa", "Emmanuel", "Paula", "Lucila"];
 let arregloNumeros = [1, 3, 5, 8, 20];
-//Ojetos -> "Una representación de elementos de la vida real pero en nuestro código"
 
-// -> Atributos -> caracteriticas de ese objeto
-// -> métodos -> acciones 
+//Objetos -> "Una representación de elementos de la vida real pero en nuestro código"
+
+// -> atributos -> características de ese objeto
+// -> métodos -> acciones que puede realizar el objeto -> son funciones
 
 // (), [], {}
-// [] -> corchetes -> son para declarar arreglos
+//[] -> corchetes -> son para declarar arreglos
 //{} -> llaves -> para declarar objetos
-// () -> parentesis -> invocar acciones 
+// () -> paréntesis-> nos permiten ejecutar acciones -> invocar funciones
+
 const celular = {
-    color: "blanco"
-    modelo:"galaxy A7"
-    ancho: 350, 
-    alto: 800, 
-    enviarMensaje: funtion(){}
-
-    //entre estos corchetes al lado de unos parentesis yo establezco la acción a realizar
-
-    console.log("mensaje enviado");
-
+    color:"blanco",
+    modelo:"Galaxy A7",
+    ancho:350,
+    alto:800,
+    //El método -> un mensaje que me indica (representa) la acción
+    enviarMensajes: function(){
+        //entre estos corchetes al lado de unos paréntesis yo establezco la accion a realizar
+        console.log("Mensaje enviado");
+    },
+    //El método -> las aciones -> directamente una operación
+    sumar: function(){
+        console.log(5+4);
+    }
 }
 
-//EJEMPLOS DE FUNCIONES
 
-//funciones -> acciones que se pueden tener en los sitios web
-// funciones -> pueden o no recibir datos entrada -> un procesamiento de datos y luego nos devuelve un resultado 
-sumar : function(){
-    console.log(5+4);
-}
+// EJEMPLOS DE FUNCIONES
 
-fuction fitrarInformacion (){
+// funciones -> acciones que ustedes pueden tener en sus sitios web
+
+// Funciones -> pueden o no recibir datos entrada -> un procesamiento de datos y luego nos devuelve un resultado 
+function buscarObjeto(){
     console.log("le muestra lo que está buscando")
 }
-//carpeta script van todos los archivos de JS pero  destinados a darle dinamismo al sitio web NO SE RELACIONA CON LA 
-//CON LA FUNCIONALIDAD DEL SITIO A NIVEL DEL BACKED
 
-//NODE JS utilizamos para poder poder implmentar js en nuestro 
-// backed-> operaciones logicas nos permiten el funcionamiento 
-//de nuestro sitio web.
+function filtarInformacion (){
+    console.log("me muestra sólo información de la depresion");
+}
+
+
+//En la carpeta scripts van TODOS los archivos de JS PERO destinados a darle dinamismo al sitio web NO SE RELACIONAN CON LA FUNCIONALIDAD DEL SITIO A NIVEL DEL BACKED
+
+//NODE JS -> Utilizamos para poder implementar js en nustro backend -> Operaciones lógicas nos permiten el FUNCIONAMIENTO de nuestro sitio web
